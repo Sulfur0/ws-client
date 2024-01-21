@@ -2,7 +2,8 @@ import  {Manager, Socket } from 'socket.io-client'
 let socket: Socket;
 export const connectToServer = ( token: string ) => {
   const manager = new Manager(
-    'http://localhost:4000/socket.io/socket.io.js',
+    // 'http://localhost:4000/socket.io/socket.io.js',
+    'https://teslo-shop-production-ae40.up.railway.app/socket.io/socket.io.js',
     { 
       extraHeaders: {
         hola: 'mundo',
